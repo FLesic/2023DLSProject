@@ -145,7 +145,7 @@ begin
                     if(Bx == Px - 1 && By == Py) begin
                         Bx_Next = Bx - 1;
                         Px_Next = Px - 1;
-                        if(!Bflag) begin
+                        if((map[Px_Next][Py_Next]==1 || Px_Next < 0 || Px_Next > 15 || Py_Next < 0 || Py_Next > 11)) begin
                             Bx_Next = Bx;
                             Px_Next = Px;
                         end
